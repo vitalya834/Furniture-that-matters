@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Основной шрифт для всей страницы */
+html {
+  font-family: "Be Vietnam Pro";
+}
+
+/* Основные настройки тела страницы */
+body {
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Сброс стандартных отступов и полей для заголовков, параграфов и меню */
+h1, h2, h3, h4, h5, h6, p, menu {
+  margin: 0;
+  padding: 0;
+}
+
+/* Head navi */
+header {
+  display: flex; /* Распределение элементов по горизонтали */
+  justify-content: space-between; /* Пространство между логотипом и меню */
+  padding: 2rem; /* Внутренний отступ */
+  align-items: center; /* Выравнивание элементов по вертикали */
+}
+
+/* Стиль основного заголовка */
+h1 {
+
+    font-size: 1rem; /* Размер текста */
+    text-transform: uppercase; /* Верхний регистр */
+    font-weight: 100; /* Лёгкая жирность текста */
+    letter-spacing: 0.1rem; /* Расстояние между буквами */
+  /*  margin: 0; /* Убираем внешние отступы */
+    display: inline-block; /* Размещение текста рядом с логотипом */
+    vertical-align: middle; /* Центровка текста по вертикали относительно логотипа */
+    
+    
+}
+
+/* Стили логотипа и его обертки */
+.Logo {
+    display: flex; /* Логотип и текст располагаются в строку */
+    align-items: center; /* Центрируем по вертикали */
+    gap: 1rem; /* Расстояние между логотипом и текстом */
+    justify-content: flex-start; /* Логотип и текст слева, текст справа от логотипа */
+}
+/* Стили списка навигации */
+nav ul {
+  display: flex; /* Горизонтальное выравнивание элементов списка */
+  gap: 2rem; /* Расстояние между пунктами меню */
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Убираем маркеры списка */
+}
+
+/* Стили ссылок в меню */
+nav a {
+  color: black;
+  text-decoration-thickness: 1px; /* Толщина подчеркивания */
+  text-decoration-color: rgb(188, 188, 188); /* Цвет подчеркивания */
+  text-underline-offset: 0.25rem; /* Расстояние между текстом и подчеркиванием */
+}
+
+/* Эффект наведения на ссылки */
+nav a:hover {
+  text-decoration-color: rgb(0, 0, 0); /* Более насыщенный цвет подчеркивания */
+  text-underline-offset: 0.15rem; /* Сдвиг подчеркивания ближе к тексту */
+  transition: 100ms; /* Плавный переход */
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  position: relative; /* Для позиционирования текста и иконок */
+  overflow: hidden; /* Скрытие выходящих за границы элементов */
+}
+
+/* Стили изображений в hero-секции */
+.hero img {
+  max-width: 50%;
+  height: auto;
+  object-fit: fill;
+  object-position: top center; /* Позиция изображения */
+}
+
+/* Стили текста в hero-секции */
+.hero h2 {
+  font-family: "Abyssinica SIL";
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Центрирование текста */
+  line-height: 135%;
+}
+
+/* Стили иконки в hero-секции */
+.hero svg {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: white;
+  width: 2rem;
+  height: 2rem;
+}
+
+
+/* Для первого блока с продуктом */
+.product-slice:nth-of-type(1) {
+  display: flex;
+}
+
+/* Для второго блока с продуктом (перевернутый порядок) */
+.product-slice:nth-of-type(2) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* Изображения в секции продуктов */
+.product-slice img {
+  width: 50%;
+  aspect-ratio: 1; /* Устанавливаем пропорции */
+  object-fit: cover; /* Обрезка изображения для заполнения */
+  object-position: bottom center;
+}
+
+/* Описание продуктов */
+.product-description {
+  margin: auto;
+  max-width: 47ch; /* Ограничение ширины текста */
+  text-align: center;
+}
+
+/* Стили заголовков продуктов */
+h3 {
+  font-family: "Abyssinica SIL";
+  font-size: 1.5rem;
+  padding-bottom: 0.6rem;
+}
+
+/* Стили текста описания продуктов */
+.product-description p {
+  font-weight: 100;
+  font-size: 1rem;
+  line-height: 180%;
+  padding-block: 0.6rem;
+}
+
+/* Стили кнопок продуктов */
+.product-description button {
+  margin-top: 0.6rem;
+  background-color: black;
+  font-size: 0.875rem;
+  padding: 0.6rem 1.5rem 0.6rem 1.5rem;
+  color: white;
+  border: 0.0625rem solid black;
+}
+
+/* Эффект наведения на кнопки */
+.product-description button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Стили футера */
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+/* Стили заголовка в футере */
+footer h2 {
+  margin-inline: auto;
+  width: fit-content;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Стили текста в футере */
+footer p {
+  font-weight: 400;
+  font-size: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Стили списка ссылок в футере */
+footer ul {
+  display: flex;
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+/* Стили ссылок в футере */
+footer a {
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 100;
+  text-decoration: none;
+}
+

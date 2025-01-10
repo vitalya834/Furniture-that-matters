@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Подключаем normalize.css для стандартного отображения стилей -->
+    <link rel="stylesheet" href="https://unpkg.com/modern-normalize@latest/modern-normalize.css">
+    <!-- Подключаем основной файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Заголовок страницы -->
+    <title>Furniture Store</title>
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link href="https://fonts.bunny.net/css?family=abyssinica-sil:400|be-vietnam-pro:200,400,900" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Шапка сайта -->
+    <header>
+        <section class="logo-container">
+            <img src="https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/logo.svg" alt="Njordhaven Logo" class="logo">
+            <h1 class="tagline">Furniture that matters</h1>
+        </section>
+        <!-- Навигационное меню -->
+        <nav class="main-navigation">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Products">Products</a></li>
+                <li><a href="#Services">Services</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главная секция с героями -->
+    <main>
+        <div class="hero">
+            <img src="https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/couch.webp" alt="Red Couch" class="hero-img">
+            <img src="https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/sessel.webp" alt="Yellow Armchair" class="hero-img">
+            <h2 class="hero-text">Not just furniture,<br>but a lifestyle</h2>
+        </div>
+
+        <!-- Секции с продуктами -->
+        <article class="product-slice">
+            <img src="https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/sessel-white.webp" alt="White Fancy Chair">
+            <section class="product-description">
+                <h3>HyggeHaven</h3>
+                <p>An epitome of Scandinavian opulence and comfort. Meticulously crafted for unparalleled relaxation, this chair embodies solace at its finest. Indulge in the ultimate hygge experience, whether immersed in a novel or savoring a fine tea.</p>
+                <button class="more-info-button">More Information</button>
+            </section>
+        </article>
+        <article class="product-slice reverse">
+            <img src="https://raw.githubusercontent.com/ferniemann/njordhaven/main/assets/tische.webp" alt="Cubic Wood Stools">
+            <section class="product-description">
+                <h3>ScandiCraft</h3>
+                <p>Where sophistication meets Scandinavian craftsmanship. Comprising three seamlessly integrated parts, this table is a testament to timeless design and exquisite detailing. Elevate your living space with its unparalleled elegance, whether hosting gatherings or simply enjoying moments of solitude.</p>
+                <button class="more-info-button">More Information</button>
+            </section>
+        </article>
+    </main>
+
+    <!-- нижняя часть  -->
+    <footer>
+        <h2>
+            <svg width="52" height="44" viewBox="0 0 53 44" fill="white" xmlns="http://www.w3.org/2000/svg" alt="Njordhaven Logo">
+                <path d="M23.2997 0L52.0461 28.6301V44H38.6311V34.1553L17.7522 13.3607L13.415 13.3607L13.415 44H0L0 0L23.2997 0ZM38.6311 15.2694V0L52.0461 0V15.2694L38.6311 15.2694Z"></path>
+            </svg>
+            <p>NjordHaven</p>
+        </h2>
+        <menu>
+            <ul>
+                <li><a href="#Legal">Legal Notice</a></li>
+                <li><a href="#Privacy">Privacy</a></li>
+            </ul>
+        </menu>
+    </footer>
+</body>
+
+</html>
